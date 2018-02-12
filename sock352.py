@@ -1,15 +1,14 @@
-# This is the skeleton code of a cs 352 socket
-# You must change the code in the pass statements to make the client and server work.
 
-import socket as ip
+
+import socket as dsock
 
 
 class socket:
     def __init__(self):
-        self.mysocket = ip.socket(ip.AF_INET, ip.SOCK_DGRAM)
+        self.mysocket = dsock.socket(dsock.AF_INET, dsock.SOCK_DGRAM)
 
     def socket(self):
-        self.mysocket = ip.socket(ip.AF_INET, ip.SOCK_DGRAM)
+        self.mysocket = dsock.socket(dsock.AF_INET, dsock.SOCK_DGRAM)
         print ("Socket initialized")
 
     def bind(self, address):
